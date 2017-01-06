@@ -1,0 +1,9 @@
+<h1>Login</h1>
+
+<%= form_tag sessions_path do %>
+  <%= label_tag :name %>
+  <%= text_field_tag :name, nil, id: "user[name]" %>
+  <%= label_tag :password %>
+  <%= password_field_tag :password, nil, id: "user[password]" %>
+  <%= submit_tag "Sign In" %>
+<% end %>
